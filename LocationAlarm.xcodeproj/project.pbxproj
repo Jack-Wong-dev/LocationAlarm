@@ -13,6 +13,9 @@
 		0A8AEC00254A298B00D4795D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A8AEBFF254A298B00D4795D /* Preview Assets.xcassets */; };
 		0A8AEC0B254A298B00D4795D /* LocationAlarmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8AEC0A254A298B00D4795D /* LocationAlarmTests.swift */; };
 		0A8AEC16254A298C00D4795D /* LocationAlarmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8AEC15254A298C00D4795D /* LocationAlarmUITests.swift */; };
+		0A8AEC27254A2CCB00D4795D /* LocationAlarmsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8AEC26254A2CCB00D4795D /* LocationAlarmsViewModel.swift */; };
+		0A8AEC30254A2D1000D4795D /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8AEC2F254A2D1000D4795D /* Alarm.swift */; };
+		0ADA6561254A33B400213508 /* AlarmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADA6560254A33B400213508 /* AlarmViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		0A8AEC11254A298C00D4795D /* LocationAlarmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationAlarmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A8AEC15254A298C00D4795D /* LocationAlarmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAlarmUITests.swift; sourceTree = "<group>"; };
 		0A8AEC17254A298C00D4795D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A8AEC26254A2CCB00D4795D /* LocationAlarmsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAlarmsViewModel.swift; sourceTree = "<group>"; };
+		0A8AEC2F254A2D1000D4795D /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		0ADA6560254A33B400213508 /* AlarmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,10 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				0A8AEBF8254A298300D4795D /* LocationAlarmApp.swift */,
-				0A8AEBFA254A298300D4795D /* ContentView.swift */,
+				0A8AEC3C254A2DAE00D4795D /* Screen */,
+				0A8AEC34254A2D1500D4795D /* Model */,
+				0A8AEC38254A2DA100D4795D /* View */,
+				0A8AEC2B254A2CD300D4795D /* ViewModel */,
+				0A8AEBFE254A298B00D4795D /* Preview Content */,
 				0A8AEBFC254A298B00D4795D /* Assets.xcassets */,
 				0A8AEC01254A298B00D4795D /* Info.plist */,
-				0A8AEBFE254A298B00D4795D /* Preview Content */,
 			);
 			path = LocationAlarm;
 			sourceTree = "<group>";
@@ -128,6 +137,38 @@
 				0A8AEC17254A298C00D4795D /* Info.plist */,
 			);
 			path = LocationAlarmUITests;
+			sourceTree = "<group>";
+		};
+		0A8AEC2B254A2CD300D4795D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0A8AEC26254A2CCB00D4795D /* LocationAlarmsViewModel.swift */,
+				0ADA6560254A33B400213508 /* AlarmViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0A8AEC34254A2D1500D4795D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0A8AEC2F254A2D1000D4795D /* Alarm.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0A8AEC38254A2DA100D4795D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0A8AEC3C254A2DAE00D4795D /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				0A8AEBFA254A298300D4795D /* ContentView.swift */,
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +300,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A8AEC27254A2CCB00D4795D /* LocationAlarmsViewModel.swift in Sources */,
 				0A8AEBFB254A298300D4795D /* ContentView.swift in Sources */,
 				0A8AEBF9254A298300D4795D /* LocationAlarmApp.swift in Sources */,
+				0A8AEC30254A2D1000D4795D /* Alarm.swift in Sources */,
+				0ADA6561254A33B400213508 /* AlarmViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
