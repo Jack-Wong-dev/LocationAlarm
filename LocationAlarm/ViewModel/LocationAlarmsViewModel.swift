@@ -9,10 +9,15 @@ import Foundation
 import Combine
 
 class LocationAlarmsViewModel: ObservableObject {
-   @Published var allAlarms = [AlarmViewModel]()
+   @Published var alarmViewModels = [AlarmViewModel]()
     
     init() {
-        
+        #if DEBUG
+        alarmViewModels = [
+            AlarmViewModel(alarm: Alarm(address: "47-51 Austell Place", radius: "200m")),
+            AlarmViewModel(alarm: Alarm(address: "625 W57th St", radius: "500m", isOn: false))
+        ]
+        #endif
     }
     
     func getAlarms() {

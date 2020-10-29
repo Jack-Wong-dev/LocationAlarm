@@ -16,6 +16,10 @@
 		0A8AEC27254A2CCB00D4795D /* LocationAlarmsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8AEC26254A2CCB00D4795D /* LocationAlarmsViewModel.swift */; };
 		0A8AEC30254A2D1000D4795D /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8AEC2F254A2D1000D4795D /* Alarm.swift */; };
 		0ADA6561254A33B400213508 /* AlarmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADA6560254A33B400213508 /* AlarmViewModel.swift */; };
+		0ADA656A254A38A300213508 /* AlarmCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADA6569254A38A300213508 /* AlarmCell.swift */; };
+		0ADA6570254A460400213508 /* FABStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADA656F254A460400213508 /* FABStyle.swift */; };
+		0ADA6578254A47A900213508 /* CreateAlarmScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADA6577254A47A900213508 /* CreateAlarmScreen.swift */; };
+		0ADA6594254A558200213508 /* UserIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADA6593254A558200213508 /* UserIntent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		0A8AEC26254A2CCB00D4795D /* LocationAlarmsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAlarmsViewModel.swift; sourceTree = "<group>"; };
 		0A8AEC2F254A2D1000D4795D /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
 		0ADA6560254A33B400213508 /* AlarmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewModel.swift; sourceTree = "<group>"; };
+		0ADA6569254A38A300213508 /* AlarmCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmCell.swift; sourceTree = "<group>"; };
+		0ADA656F254A460400213508 /* FABStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FABStyle.swift; sourceTree = "<group>"; };
+		0ADA6577254A47A900213508 /* CreateAlarmScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAlarmScreen.swift; sourceTree = "<group>"; };
+		0ADA6593254A558200213508 /* UserIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserIntent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +159,7 @@
 		0A8AEC34254A2D1500D4795D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0ADA6592254A557100213508 /* Enum */,
 				0A8AEC2F254A2D1000D4795D /* Alarm.swift */,
 			);
 			path = Model;
@@ -159,6 +168,8 @@
 		0A8AEC38254A2DA100D4795D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0ADA656E254A45F600213508 /* Style */,
+				0ADA6569254A38A300213508 /* AlarmCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -167,8 +178,25 @@
 			isa = PBXGroup;
 			children = (
 				0A8AEBFA254A298300D4795D /* ContentView.swift */,
+				0ADA6577254A47A900213508 /* CreateAlarmScreen.swift */,
 			);
 			path = Screen;
+			sourceTree = "<group>";
+		};
+		0ADA656E254A45F600213508 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				0ADA656F254A460400213508 /* FABStyle.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		0ADA6592254A557100213508 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				0ADA6593254A558200213508 /* UserIntent.swift */,
+			);
+			path = Enum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,8 +331,12 @@
 				0A8AEC27254A2CCB00D4795D /* LocationAlarmsViewModel.swift in Sources */,
 				0A8AEBFB254A298300D4795D /* ContentView.swift in Sources */,
 				0A8AEBF9254A298300D4795D /* LocationAlarmApp.swift in Sources */,
+				0ADA6578254A47A900213508 /* CreateAlarmScreen.swift in Sources */,
 				0A8AEC30254A2D1000D4795D /* Alarm.swift in Sources */,
 				0ADA6561254A33B400213508 /* AlarmViewModel.swift in Sources */,
+				0ADA6594254A558200213508 /* UserIntent.swift in Sources */,
+				0ADA656A254A38A300213508 /* AlarmCell.swift in Sources */,
+				0ADA6570254A460400213508 /* FABStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

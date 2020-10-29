@@ -11,6 +11,7 @@ struct Alarm: Identifiable {
     let id = UUID()
     var address: String
     var radius: String
+    var isOn: Bool = true
     var repeatable: Bool = false
     var readAloud: Bool = false
     
